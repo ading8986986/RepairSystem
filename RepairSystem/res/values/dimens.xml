@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    
+    <!-- font size -->
+    <dimen name="nfont_size_68px">23sp</dimen>
+    <dimen name="nfont_size_60px">20sp</dimen>
+    <dimen name="nfont_size_54px">18sp</dimen>
+    <dimen name="nfont_size_52px">17sp</dimen>
+    <dimen name="nfont_size_48px">16sp</dimen>
+    <dimen name="nfont_size_42px">13sp</dimen>
+    
+    
+    <dimen name="nfont_size_40px">20sp</dimen>
+    <dimen name="nfont_size_38px">19sp</dimen>
+    <dimen name="nfont_size_36px">18sp</dimen>
+    <dimen name="nfont_size_34px">17sp</dimen>
+    <dimen name="nfont_size_32px">16sp</dimen>
+    <dimen name="nfont_size_30px">15sp</dimen>
+    <dimen name="nfont_size_28px">14sp</dimen>
+    <dimen name="nfont_size_26px">13sp</dimen>
+    <dimen name="nfont_size_24px">12sp</dimen>
+    <dimen name="nfont_size_22px">11sp</dimen>
+    <dimen name="nfont_size_20px">10sp</dimen>
+    
+    <dimen name="font_size_52px">26sp</dimen>
+    <dimen name="font_size_44px">22sp</dimen>
+    <dimen name="font_size_42px">21sp</dimen>
+    <dimen name="font_size_40px">20sp</dimen>
+    <dimen name="font_size_38px">19sp</dimen>
+    <dimen name="font_size_36px">18sp</dimen>
+    <dimen name="font_size_34px">17sp</dimen>
+    <dimen name="font_size_32px">16sp</dimen>
+    <dimen name="font_size_30px">15sp</dimen>
+    <dimen name="font_size_28px">14sp</dimen>
+    <dimen name="font_size_26px">13sp</dimen>
+    <dimen name="font_size_24px">12sp</dimen>
+    <dimen name="font_size_22px">11sp</dimen>
+    <dimen name="font_size_20px">10sp</dimen>
+    
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+
+</resources>

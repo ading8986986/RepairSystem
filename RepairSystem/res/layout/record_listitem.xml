@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+    <ImageView 
+        android:id="@+id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/submit"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="15dp"
+        android:layout_centerVertical="true"/>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_toRightOf="@id/state"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_marginRight="17dp"
+        >
+        <TextView 
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="水管子漏水"
+            android:textColor="@color/blacktop"
+            android:textSize="@dimen/nfont_size_54px"
+            android:layout_marginBottom="11dp"
+            />
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView 
+                
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="最后操作时间 : "
+	            android:textColor="@color/gray01"
+	            android:textSize="@dimen/nfont_size_52px"
+	            />
+            <TextView 
+                android:id="@+id/time"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:singleLine="true"
+	            android:text="2014/12/12 17:32"
+	            android:textColor="@color/gray01"
+	            android:textSize="@dimen/nfont_size_52px"
+	            />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

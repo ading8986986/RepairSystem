@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    android:background="@color/white">
+    <include layout="@layout/title_bar"/>
+	<LinearLayout 
+	    android:layout_height="220dp"
+	    android:layout_width="match_parent"
+	    android:background="@color/orange"
+	    ></LinearLayout>
+    <LinearLayout 
+        android:layout_height="120dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        >
+        <LinearLayout 
+            android:layout_height="match_parent"
+            android:layout_width="120dp"
+            android:background="@drawable/bg_white"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView 
+                android:id="@+id/repair"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/repair"
+                android:textColor="@color/blacktop"
+                android:textSize="@dimen/nfont_size_54px"
+                android:gravity="center_horizontal"
+                android:drawablePadding="13dp"
+                android:drawableTop="@drawable/repaire_normal"/>
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_height="match_parent"
+            android:layout_width="120dp"
+            android:background="@drawable/bg_white"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView 
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/building"
+                android:textColor="@color/blacktop"
+                android:textSize="@dimen/nfont_size_54px"
+                android:gravity="center_horizontal"
+                android:drawablePadding="13dp"
+                android:drawableTop="@drawable/c2_09"/>
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

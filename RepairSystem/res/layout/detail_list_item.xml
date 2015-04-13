@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="13dp"
+    android:paddingRight="3dp"
+    android:background="@color/white" >
+   <RelativeLayout 
+       android:id="@+id/image"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent">
+        <RelativeLayout 
+	        android:layout_width="3dp"
+	        android:layout_height="match_parent"
+	        android:layout_centerHorizontal="true">
+	        <ImageView 
+	            android:id="@+id/topline"
+	            android:layout_width="match_parent"
+	            android:layout_height="30dp"
+	            android:background="@color/orange"
+	            android:layout_alignParentTop="true"
+	            />
+	        <ImageView 
+	            android:id="@+id/bottomline"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginTop="30dp"
+	            android:background="@color/orange"
+	            />
+	    </RelativeLayout>
+	    <ImageView 
+	        android:id="@+id/state_image"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/submit"
+	        android:layout_centerVertical="true"/>
+   </RelativeLayout>
+   <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:layout_margin="10dp"
+       android:background="@drawable/diaglog"
+       android:padding="10dp"
+       android:orientation="horizontal"
+       >
+       <TextView 
+           android:id="@+id/state_word"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:text="已提交"
+           android:textColor="@color/blacktop"
+           android:textSize="@dimen/nfont_size_54px"/>
+       
+           
+       <TextView 
+           android:id="@+id/content"
+           android:layout_alignParentRight="true"
+           android:layout_marginLeft="10dp"
+           android:layout_centerVertical="true"
+           android:singleLine="true"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:textColor="@color/blacktop"
+	       android:textSize="@dimen/nfont_size_54px"/>
+   </LinearLayout>
+
+</LinearLayout>

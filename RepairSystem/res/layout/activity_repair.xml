@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+     <include 
+        layout="@layout/title_bar"/>
+     <LinearLayout
+        android:id="@+id/titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/repair_lable"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="@string/want_repair"
+            android:paddingTop="8dp"
+            android:drawableBottom="@drawable/collect_title_line"  
+            android:drawablePadding="8dp"          
+            android:textColor="@color/orange"
+            android:textSize="@dimen/nfont_size_60px" />
+        
+        <ImageView 
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/orange"
+            />
+        <TextView
+            android:id="@+id/record_lable"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="@string/repari_record"
+            android:paddingTop="8dp"
+            android:drawableBottom="@drawable/collect_title_line"  
+            android:drawablePadding="8dp"          
+            android:textColor="@color/gray01"
+            android:textSize="@dimen/nfont_size_60px" />
+    </LinearLayout>
+   	<android.support.v4.view.ViewPager
+        android:id="@+id/content"       
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation"
+        android:background="@color/white" />
+</LinearLayout>
