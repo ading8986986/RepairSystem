@@ -126,7 +126,7 @@ public class RepairActivity extends FragmentActivity implements OnPageChangeList
 		// TODO Auto-generated method stub
 		mCurPage = position;
 		updateTitleSel();
-		if(position == 1)
+		if(position == 1&&((RepairRecordFragment)recordFragment).getDataList() == null)
 			((RepairRecordFragment)recordFragment).getRepairedProjectData();
 	}
 

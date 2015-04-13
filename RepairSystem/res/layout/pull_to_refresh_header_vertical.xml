@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
 
     <FrameLayout
         android:id="@+id/fl_inner"
@@ -13,47 +15,45 @@
         <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="left|center_vertical" >
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="40dp" >
 
             <ImageView
                 android:id="@+id/pull_to_refresh_image"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" 
+                android:background="@drawable/ctl_z_arrow_up"
+                />
 
             <ProgressBar
                 android:id="@+id/pull_to_refresh_progress"
-                style="?android:attr/progressBarStyleSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:indeterminate="true"
-                android:visibility="gone" />
+                android:visibility="gone"
+                android:indeterminateDrawable="@drawable/progressbar"
+                 />
         </FrameLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:gravity="center_horizontal"
+            android:gravity="center"
             android:orientation="vertical" >
 
             <TextView
                 android:id="@+id/pull_to_refresh_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="@dimen/nfont_size_54px"
                 android:singleLine="true"
-                android:textAppearance="?android:attr/textAppearance"
-                android:textStyle="bold" />
+                android:textColor="@color/gray01"
+                android:textAppearance="?android:attr/textAppearance"/>
 
-            <TextView
-                android:id="@+id/pull_to_refresh_sub_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:singleLine="true"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:visibility="gone" />
+            
         </LinearLayout>
     </FrameLayout>
 
-</merge>
+</FrameLayout>

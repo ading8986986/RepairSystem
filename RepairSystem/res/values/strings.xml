@@ -26,7 +26,7 @@
     <string name="pull_to_refresh_refreshing_label">正在加载...</string>
     <string name="pull_to_refresh_tap_label">上拉刷新...</string>
     <string name="more">加载更多</string>
-    <string name="no_new_content">暂时没有更多内容了，请看看其他分类吧</string>
+    <string name="no_more">没有更多记录了</string>
 
     <!-- RepairActivity -->
     <string name="require">(必填)</string>

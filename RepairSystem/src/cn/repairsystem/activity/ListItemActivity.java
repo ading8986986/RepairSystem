@@ -64,14 +64,18 @@ public class ListItemActivity extends Activity implements OnClickListener ,OnIte
 		listItemType = getIntent().getIntExtra("data",0);
 		switch (listItemType) {
 		case RepairFragment.repaireZone_List:
-			for (int i = 0; i < RepairSystemApplication.dataCenter.getRepairZoneList().size(); i++) {
-				dataList.add(RepairSystemApplication.dataCenter.getRepairZoneList().get(i).getName());
+			if(RepairSystemApplication.dataCenter.getRepairZoneList()!= null){
+				for (int i = 0; i < RepairSystemApplication.dataCenter.getRepairZoneList().size(); i++) {
+					dataList.add(RepairSystemApplication.dataCenter.getRepairZoneList().get(i).getName());
+				}
 			}
 			titleString = "选择"+getResources().getString(R.string.zone);
 			break;
 		case RepairFragment.repaireProject_List:
-			for (int i = 0; i < RepairSystemApplication.dataCenter.getRepairProjectList().size(); i++) {
-				dataList.add(RepairSystemApplication.dataCenter.getRepairProjectList().get(i).name);
+			if(null != RepairSystemApplication.dataCenter.getRepairProjectList()){
+				for (int i = 0; i < RepairSystemApplication.dataCenter.getRepairProjectList().size(); i++) {
+					dataList.add(RepairSystemApplication.dataCenter.getRepairProjectList().get(i).name);
+				}
 			}
 			titleString = "选择"+getResources().getString(R.string.project_category);
 			break;
